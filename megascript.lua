@@ -10,6 +10,9 @@ Section:NewSlider("Скорость", "SliderInfo", 500, 0, function(s) -- 500 (
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
+Section:NewSlider("Прыжок", "SliderInfo", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
 
 Section:NewToggle("ESP", "ВХ", function(state)
     if state then
