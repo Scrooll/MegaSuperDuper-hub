@@ -12,7 +12,8 @@ end)
 
 Section:NewSlider("Прыжок", "SliderInfo", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
       game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end)	
+end)
+
 Section:NewButton("Aimbot", "Аимбот для шутеров(Не рекомендуется включать в режимах где нет ничего с аимом)", function()
     PLAYER  = game.Players.LocalPlayer
 MOUSE   = PLAYER:GetMouse()
