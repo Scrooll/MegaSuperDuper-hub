@@ -280,3 +280,9 @@ end)
 local Tab = Window:NewTab("Mine")
 
 local Section = Tab:NewSection("Скоро...")
+
+for i,v in pairs(game:GetDescendants()) do
+if v.Name == 'Credit' then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
