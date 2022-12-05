@@ -6,7 +6,7 @@ local Tab = Window:NewTab("Основные функции")
 
 local Section = Tab:NewSection("Самые основы")
 
-Section:NewSlider("Скорость", "SliderInfo", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+Section:NewSlider("Скорость", "Вы становитесь очень быстрым", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
