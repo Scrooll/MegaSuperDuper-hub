@@ -26,7 +26,7 @@ Section:NewToggle("ESP", "ВХ", function(state)
                     esp.ZIndex = 0
                     esp.Size = Vector3.new(4, 5, 1)
                     esp.Transparency = 0.65
-                    esp.Color3 = Color3.fromRGB((255,48,48)
+                    esp.Color3 = Color3.fromRGB(255,48,48)
                     esp.AlwaysOnTop = true
                     esp.Name = "EspBox"
                 end
