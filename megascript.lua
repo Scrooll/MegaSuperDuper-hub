@@ -16,7 +16,7 @@ end)
 
 Section:NewToggle("ESP", "ВХ", function(state)
     if state then
-        while wait(0.5) do
+while wait(0.5) do
     for i, childrik in ipairs(workspace:GetDescendants()) do
         if childrik:FindFirstChild("Humanoid") then
             if not childrik:FindFirstChild("EspBox") then
@@ -34,9 +34,6 @@ Section:NewToggle("ESP", "ВХ", function(state)
         end
     end
 end
-    else
-        
-    end
 end)
 
 Section:NewButton("Aimbot", "Аимбот для шутеров(Не рекомендуется включать в режимах где нет ничего с аимом)", function()
