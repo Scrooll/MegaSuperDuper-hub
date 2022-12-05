@@ -276,6 +276,7 @@ repeat
 until ESP_ENABLED == false
 end)
 
+
 local Tab = Window:NewTab("Mine")
 
 local Section = Tab:NewSection("Скоро...")
