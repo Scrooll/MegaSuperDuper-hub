@@ -272,3 +272,16 @@ repeat
 	end
 until ESP_ENABLED == false
 end)
+
+local Tab = Window:NewTab("Майнер")
+
+local Section = Tab:NewSection("Функции")
+
+Section:NewButton("Собирать койны", "", function()
+    
+for i,v in pairs(game:GetDescendants()) do
+if v.Name == 'Credit' then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+end)
