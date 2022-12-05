@@ -10,7 +10,7 @@ Section:NewSlider("Скорость", "SliderInfo", 500, 0, function(s) -- 500 (
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Section:NewSlider("Прыжок", "SliderInfo", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+Section:NewSlider("Прыжок", "Делает из вас зайца", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
       game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
