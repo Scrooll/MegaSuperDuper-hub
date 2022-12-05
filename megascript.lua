@@ -39,7 +39,7 @@ end
     end
 end)
 
-Section:NewButton("Aimbot", "Аимбот для шутеров", function()
+Section:NewButton("Aimbot", "Аимбот для шутеров(Не рекомендуется включать в режимах где нет ничего с аимом)", function()
     PLAYER  = game.Players.LocalPlayer
 MOUSE   = PLAYER:GetMouse()
 CC      = game.Workspace.CurrentCamera
