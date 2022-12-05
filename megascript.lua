@@ -14,7 +14,7 @@ Section:NewSlider("Прыжок", "SliderInfo", 500, 0, function(s) -- 500 (Ма
       game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+Section:NewButton("ESP", "что то типо wallhack только в роблокс", function()
     while wait(0.5) do
     for i, childrik in ipairs(workspace:GetDescendants()) do
         if childrik:FindFirstChild("Humanoid") then
