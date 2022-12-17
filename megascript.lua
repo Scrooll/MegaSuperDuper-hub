@@ -106,7 +106,6 @@ local function FLY()
     elseif KEY:lower() == 'd' then
       CONTROL.R = 0
     end
-  end)
  
  
  
