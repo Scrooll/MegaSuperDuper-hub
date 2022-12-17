@@ -36,8 +36,8 @@ end
 end)
 
 Section:NewButton("Флай", "Вы можете летать!", function()
-    if state then
-        _G.FLYING = false
+
+_G.FLYING = false
 local LP = game:service('Players').LocalPlayer
 local T = LP.Character.UpperTorso
 local CONTROL = {F = 0, B = 0, L = 0, R = 0}
@@ -106,12 +106,13 @@ local function FLY()
     elseif KEY:lower() == 'd' then
       CONTROL.R = 0
     end
+  end)
  
  
  
  
   FLY()
-
+end)
 Section:NewButton("Aimbot", "Аимбот для шутеров(Не рекомендуется включать в режимах где нет ничего с аимом)", function()
     PLAYER  = game.Players.LocalPlayer
 MOUSE   = PLAYER:GetMouse()
