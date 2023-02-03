@@ -14,7 +14,7 @@ Section:NewSlider("Прыжок", "Делает из вас зайца", 500, 0,
 end)
 
 Section:NewSlider("Спиннер", "Делает из вас спиннер", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
-		power = s -- change this to make it more or less powerful
+		power = 300 -- change this to make it more or less powerful
  
 game:GetService('RunService').Stepped:connect(function()
 game.Players.LocalPlayer.Character.Head.CanCollide = false
