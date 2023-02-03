@@ -13,6 +13,20 @@ Section:NewSlider("Прыжок", "Делает из вас зайца", 500, 0,
       game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
+Section:NewSlider("Спиннер", "Делает из вас спиннер", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+		power = s -- change this to make it more or less powerful
+ 
+game:GetService('RunService').Stepped:connect(function()
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+end)
+wait(.1)
+local bambam = Instance.new("BodyThrust")
+bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+bambam.Force = Vector3.new(power,0,power)
+bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 Section:NewButton("ESP", "что то типо wallhack только в роблокс", function()
     while wait(0.5) do
     for i, childrik in ipairs(workspace:GetDescendants()) do
@@ -349,7 +363,7 @@ repeat
 until ESP_ENABLED == false
 end)
 
-local Tab = Window:NewTab("Майнер")
+local Tab = Window:NewTab("Полезные функции")
 
 local Section = Tab:NewSection("Функции")
 
