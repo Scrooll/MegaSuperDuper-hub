@@ -363,6 +363,7 @@ local bambam = Instance.new("BodyThrust")
 bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
 bambam.Force = Vector3.new(power,0,power)
 bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+end)
 
 local Tab = Window:NewTab("Майнер")
 
