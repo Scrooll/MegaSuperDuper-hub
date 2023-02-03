@@ -13,41 +13,6 @@ Section:NewSlider("Прыжок", "Делает из вас зайца", 500, 0,
       game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Section:NewSlider("Спиннер", "Делает из вас спиннер", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
-		power = 300 -- change this to make it more or less powerful
- 
-game:GetService('RunService').Stepped:connect(function()
-game.Players.LocalPlayer.Character.Head.CanCollide = false
-game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
-game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
-game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
-end)
-wait(.1)
-local bambam = Instance.new("BodyThrust")
-bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-bambam.Force = Vector3.new(power,0,power)
-bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-Section:NewButton("ESP", "что то типо wallhack только в роблокс", function()
-    while wait(0.5) do
-    for i, childrik in ipairs(workspace:GetDescendants()) do
-        if childrik:FindFirstChild("Humanoid") then
-            if not childrik:FindFirstChild("EspBox") then
-                if childrik ~= game.Players.LocalPlayer.Character then
-                    local esp = Instance.new("BoxHandleAdornment",childrik)
-                    esp.Adornee = childrik
-                    esp.ZIndex = 0
-                    esp.Size = Vector3.new(4, 5, 1)
-                    esp.Transparency = 0.65
-                    esp.Color3 = Color3.fromRGB(255,48,48)
-                    esp.AlwaysOnTop = true
-                    esp.Name = "EspBox"
-                end
-            end
-        end
-    end
-end
-end)
-
 Section:NewButton("Флай", "Вы можете летать!", function()
 
 _G.FLYING = false
